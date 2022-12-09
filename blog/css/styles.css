@@ -1,0 +1,265 @@
+@import url("../css/font.css");
+
+
+
+html,body {
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: var(--lexend_deca);
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: var(--ubuntu);
+}
+
+
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--livvic);
+    cursor: pointer;
+}
+
+:root {
+
+    /* Google Fonts */
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    --sunshine: #F49D1A;
+
+    /* Gradient Color */
+    --night-fade:linear-gradient(background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%););
+
+    /* Theme Fonts */
+    --dancing_script:"Dancing_Script",cursive;
+    --lexend_deca:"Lecend_Deca",cursive;
+    --livvic:"Livvic",cursive;
+    --montserrat:"Montserrat",cursive;
+    --ubuntu:"Ubuntu",cursive;
+
+
+
+}
+
+
+
+
+/* Global Classes */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+/* Navbar */
+.nav {
+    background-color: #A0E4CB;
+    padding: 0.2rem;
+    height: 0rem;
+    min-height: 6vh;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+    
+}
+
+.nav .nav-menu {
+    justify-content: space-between;
+    
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+
+}
+
+.nav .toggle-collapse .toggle-icon {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icon i {
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse {
+    height: 20rem;
+}
+
+
+
+
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+    padding: 0 ;
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--ubuntu);
+    font-size: 1.1rem;
+}
+.nav .nav-items .nav-link:hover {
+    background-color: var(--sunshine);
+    border-radius: 3rem;
+}
+
+.nav .nav-items .nav-link a:hover {
+    color: var(--white);
+}
+
+
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    display: block;
+    font-family: var(--dancing_script);
+    font-size: 1.6rem;
+    color: #0f0f0f;
+    
+}
+
+.nav .social {
+    padding: 1.4rem 3rem;
+    
+
+}
+
+.nav .social i {
+    padding: 0 0 .5rem .2rem;
+}
+
+.nav .social i:hover {
+    color: var(--sunshine);
+}
+
+/* Viewport less then or equal to 750 */
+
+@media only screen and (max-width:750px) {
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+        background: #0f0f0f;
+    }
+    .nav .toggle-collapse {
+        display: initial;
+        height: 30rem;
+    }
+}
+
+
+/* xxxxxxxxxxx Navbar xxxxxxxxxxx*/
+
+
+/*          Main Content           */
+
+
+/*          Site Title          */
+
+main .site-title {
+    background: url(../assets/background2.jpg);
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background {
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}   
+
+
+main .site-title h1, h3 {
+    margin: .3rem;
+   
+}
+
+
+main .site-title .btn {
+    margin: 1.8rem;
+    background: var(--sunshine);
+
+}
+
+
+main .site-title .btn:hover {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+
+/*X          Site Title           X*/
+
+/*          Recipe Carousel          */
+.BLOG {
+    background: url(../assets/background2.jpg);
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+
+}
+
+
+
+
+/* X            Recipe Carousel         X */
+
+
+
+
+
+
+
+/*xxxxxxxxxxxxx Main Content xxxxxxxxxxxxx*/
+
+
+
+/* 
+    Things that I did.
+    Links that are connected: styles.css, font-family, main.js.
+    I also created variables for fonts, color, gradient color.
+    I added the hover effect on the nav items (background and color)
+    Toggle was fixed, the problem was there was typo on the code itself which was in the @media. css file.
+
+*/
+
+
+/*  NOT WORKING
+
+
+
+
+*/
