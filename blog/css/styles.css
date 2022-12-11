@@ -5,7 +5,8 @@
 html,body {
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
+    /* overflow: hidden; */
 }
 
 h1 {
@@ -223,14 +224,14 @@ main .site-title .btn:hover {
 /*X          Site Title           X*/
 
 /*          Recipe Carousel          */
-.BLOG {
+/* .BLOG {
     background: url(../assets/background2.jpg);
     background-position: center;
     height: 100vh;
     width: 100%;
     background-size: cover;
 
-}
+} */
 
 
 
